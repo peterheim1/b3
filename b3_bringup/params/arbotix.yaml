@@ -1,0 +1,10 @@
+port: /dev/sensors/ftdi_A700eDQw #arbotix
+#port: /dev/sensors/ftdi_A400gac2 #usbDynamixel
+
+rate: 15
+dynamixels: {
+    head_pan_joint: {id: 8, invert: true},
+    head_tilt_joint: {id: 4, max_angle: 100, min_angle: -100}
+}
+controllers: {
+  head_controller: {type: follow_controller, joints: [head_pan_joint, head_tilt_joint], action_name: head_controller/follow_joint_trajectory }}

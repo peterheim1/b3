@@ -1,0 +1,10 @@
+<launch>
+  
+  <!-- AMCL -->
+  <include file="$(find b3_bringup)/launch/amcl.launch"/>
+
+  <!-- move_base -->
+  <include file="$(find b3_bringup)/launch/move_base.launch"/>
+    
+
+</launch>

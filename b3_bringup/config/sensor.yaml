@@ -1,0 +1,2 @@
+port: /dev/ttyACM0 #where # is a number such as 0, 1, 2, etc.
+baudRate: 115200
